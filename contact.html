@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact MindSpring Clinic - Get in touch for mental health support and wellness services">
+    <title>Contact Us - MindSpring Clinic</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text">MindSpring Clinic</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="authButtonContainer">
+                    <button class="auth-btn" onclick="openLoginModal()">
+                        <span>Login</span>
+                    </button>
+                </li>
+                <li class="user-info" id="userInfo">
+                    <div class="user-avatar">
+                        <span id="userInitial">U</span>
+                    </div>
+                    <span id="userName">Welcome</span>
+                    <button class="logout-btn" onclick="logout()">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1>Get In Touch With Us</h1>
+            <p>We're here to support your mental health journey. Reach out to us through any of the channels below, and our dedicated team will respond promptly to assist you.</p>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="quick-contact-section">
+        <div class="quick-contact-grid">
+            <!-- Phone Card -->
+            <div class="quick-contact-card">
+                <div class="quick-contact-icon">📞</div>
+                <h3>Call Us</h3>
+                <p>Speak directly with our team</p>
+                <p><a href="tel:+919876543210">+91-9876-543210</a></p>
+                <p><a href="tel:+918765432109">+91-8765-432109</a></p>
+                <a href="tel:+919876543210" class="contact-action-btn">Call Now</a>
+            </div>
+
+            <!-- Email Card -->
+            <div class="quick-contact-card">
+                <div class="quick-contact-icon">📧</div>
+                <h3>Email Us</h3>
+                <p>Send us your queries</p>
+                <p><a href="mailto:info@mindspring.com">info@mindspring.com</a></p>
+                <p><a href="mailto:support@mindspring.com">support@mindspring.com</a></p>
+                <a href="mailto:info@mindspring.com" class="contact-action-btn">Send Email</a>
+            </div>
+
+            <!-- Visit Card -->
+            <div class="quick-contact-card">
+                <div class="quick-contact-icon">📍</div>
+                <h3>Visit Us</h3>
+                <p>Come to our clinic</p>
+                <p>123, MG Road</p>
+                <p>Bengaluru, Karnataka</p>
+                <a href="#location" class="contact-action-btn">View Map</a>
+            </div>
+
+            <!-- Hours Card -->
+            <div class="quick-contact-card">
+                <div class="quick-contact-icon">🕐</div>
+                <h3>Business Hours</h3>
+                <p>We're available for you</p>
+                <p><strong>Mon - Fri:</strong> 9:00 AM - 6:00 PM</p>
+                <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                <p><strong>Sunday:</strong> Closed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location">
+        <div class="location-container">
+            <div class="section-header">
+                <span class="section-label">Find Us</span>
+                <h2 class="section-title">Our Location</h2>
+                <p class="section-description">Visit our welcoming clinic located in the heart of Bengaluru, easily accessible by public transport and with ample parking facilities.</p>
+            </div>
+
+            <div class="location-grid">
+                <!-- Location Details -->
+                <div class="location-details">
+                    <h3>Address & Details</h3>
+                    
+                    <div class="address-block">
+                        <h4>MindSpring Clinic - Main Branch</h4>
+                        <p><strong>📍 Address:</strong></p>
+                        <p>123, MG Road</p>
+                        <p>Bengaluru, Karnataka 560001</p>
+                        <p>India</p>
+                    </div>
+
+                    <div class="address-block">
+                        <h4>Operating Hours</h4>
+                        <table class="hours-table">
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9:00 AM - 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 AM - 4:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>Emergency Support</td>
+                                <td>24/7 Available</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="address-block">
+                        <h4>Transportation</h4>
+                        <p><strong>🚇 Metro:</strong> MG Road Metro Station (5 min walk)</p>
+                        <p><strong>🚌 Bus:</strong> Multiple routes available</p>
+                        <p><strong>🚗 Parking:</strong> Free parking available</p>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6577098788743!2d77.6245471!3d12.9351929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1555555555%3A0x123456789!2sMG%20Road%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1234567890" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-connect-section">
+        <div class="social-connect-container">
+            <h2>Connect With Us</h2>
+            <p>Follow us on social media to stay updated with mental health tips, clinic news, and wellness resources.</p>
+            
+            <div class="social-grid">
+                <div class="social-card">
+                    <a href="https://facebook.com" target="_blank">
+                        <div class="social-card-icon">f</div>
+                        <h4>Facebook</h4>
+                        <span>@MindSpringClinic</span>
+                    </a>
+                </div>
+
+                <div class="social-card">
+                    <a href="https://twitter.com" target="_blank">
+                        <div class="social-card-icon">𝕏</div>
+                        <h4>Twitter</h4>
+                        <span>@MindSpringCare</span>
+                    </a>
+                </div>
+
+                <div class="social-card">
+                    <a href="https://instagram.com" target="_blank">
+                        <div class="social-card-icon">📷</div>
+                        <h4>Instagram</h4>
+                        <span>@mindspring.clinic</span>
+                    </a>
+                </div>
+
+                <div class="social-card">
+                    <a href="https://linkedin.com" target="_blank">
+                        <div class="social-card-icon">in</div>
+                        <h4>LinkedIn</h4>
+                        <span>MindSpring Clinic</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact Banner -->
+    <div class="emergency-banner">
+        <h3>🚨 Crisis Support Available 24/7</h3>
+        <p>If you're experiencing a mental health emergency, our crisis support team is available around the clock to help you.</p>
+        <a href="tel:+919876543210" class="emergency-phone">
+            <span>📞</span>
+            <span>+91-9876-543210</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🌱</span>
+                        <span class="logo-text">MindSpring Clinic</span>
+                    </a>
+                    <p class="footer-tagline">Empowering minds, transforming lives through professional mental health care.</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                            <span>f</span>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                            <span>𝕏</span>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                            <span>📷</span>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <span>in</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="services.html">Our Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="services.html">Individual Therapy</a></li>
+                            <li><a href="services.html">Couple Counseling</a></li>
+                            <li><a href="services.html">Family Therapy</a></li>
+                            <li><a href="services.html">Group Sessions</a></li>
+                            <li><a href="services.html">Crisis Intervention</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Blog & Articles</a></li>
+                            <li><a href="#">Mental Health Tips</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Insurance Info</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li>
+                                <span class="contact-icon">📞</span>
+                                <a href="tel:+919876543210">+91-9876-543210</a>
+                            </li>
+                            <li>
+                                <span class="contact-icon">📧</span>
+                                <a href="mailto:info@mindspring.com">info@mindspring.com</a>
+                            </li>
+                            <li>
+                                <span class="contact-icon">🕐</span>
+                                <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="contact-icon">📍</span>
+                                <span>MG Road, Bengaluru</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 MindSpring Clinic. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Terms of Service</a>
+                        <span>•</span>
+                        <a href="#">Privacy Policy</a>
+                        <span>•</span>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+                <p class="footer-credit">Developed by Team 1 - Web Technologies Lab</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login/Signup Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+            
+            <div class="modal-header">
+                <h2 id="modalTitle">Welcome Back</h2>
+                <p id="modalSubtitle">Sign in to access your account</p>
+            </div>
+
+            <form id="authForm" onsubmit="handleAuth(event)">
+                <div class="form-group" id="nameGroup" style="display: none;">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required autocomplete="current-password">
+                </div>
+
+                <div class="form-group" id="confirmPasswordGroup" style="display: none;">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password" autocomplete="new-password">
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span id="submitBtnText">Sign In</span>
+                </button>
+            </form>
+
+            <div class="switch-auth">
+                <span id="switchText">Don't have an account?</span>
+                <a href="#" onclick="toggleAuthMode(event)" id="switchLink">Sign Up</a><br>
+                  <span>Admin</span>
+                <a href="admin_login.php">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
